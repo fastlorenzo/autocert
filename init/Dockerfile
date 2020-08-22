@@ -10,6 +10,7 @@ ENV KUBE_LATEST_VERSION="v1.18.2"
 
 ENV AUTO_START=false
 
+USER root
 RUN apk --update add expect && \
     apkArch="$(apk --print-arch)"; \
     case "$apkArch" in \
